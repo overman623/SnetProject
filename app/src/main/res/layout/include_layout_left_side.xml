@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <Button
+            android:id="@+id/button_connect"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/button_click"
+            >
+        </Button>
+
+        <ImageView
+            android:id="@+id/image_connect"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <ToggleButton
+            android:id="@+id/toggle_button_setting"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/toggle_selector"
+            android:textOn=""
+            android:textOff=""
+            >
+        </ToggleButton>
+
+        <ImageView
+            android:id="@+id/image_gear"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <Button
+            android:id="@+id/button_people"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/button_click"
+            >
+        </Button>
+
+        <ImageView
+            android:id="@+id/image_people"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+<!--    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <ToggleButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="visible"
+            android:textColor="@color/white"
+            android:background="@drawable/toggle_selector"
+            >
+        </ToggleButton>
+
+    </RelativeLayout>-->
+
+
+</LinearLayout>

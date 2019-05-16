@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="snetproject.com.main.MainActivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#33333301"
+        map:uiCompass="false"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        >
+
+<!--        <TextView
+            android:id="@+id/text_title_center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="V2X Tablet"
+            android:textColor="@color/white" />-->
+
+        <ImageView
+            android:id="@+id/image_kcity"
+            android:layout_width="130dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_alignParentBottom="true"
+            />
+
+        <ImageView
+            android:id="@+id/image_logo_kt"
+            android:layout_width="130dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            />
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_alignParentRight="true"
+            android:gravity="end"
+            >
+
+            <ImageView
+                android:id="@+id/image_pc5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                />
+
+            <ImageView
+                android:id="@+id/image_lte"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="bottom"
+                >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/image_giga_stellth"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                />
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/red" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_layout_title"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/linear_layout_right_side"
+            android:layout_toRightOf="@+id/linear_layout_left_side"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:clickable="true"
+            >
+
+            <ImageView
+                android:id="@+id/image_layout_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                />
+
+            <LinearLayout
+                android:layout_width="600dp"
+                android:layout_height="180dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="70dp"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="환자 정보"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="이름 : 박서준"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_weight="1"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="성별 : 남자"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="나이 : 32세"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_weight="1"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="혈액형 : B형"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="과거 병력 : 부정맥"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="복용중인 약 : 이솦틴서방정 180mg 1일 1정 복용"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="진단 소견 : 부정맥에 의한 심정지 예상"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    />
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                ></FrameLayout>
+
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/include_layout_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            layout="@layout/include_layout_setting"
+            android:visibility="gone"
+             />
+
+        <include
+            android:id="@+id/linear_layout_left_side"
+            layout="@layout/include_layout_left_side"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <include
+            android:id="@+id/linear_layout_right_side"
+            layout="@layout/include_layout_right_side"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/black"
+            android:layout_alignParentBottom="true"
+            ></FrameLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_alert"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        >
+
+        <ImageView
+            android:id="@+id/image_alert"
+            android:layout_width="240dp"
+            android:layout_height="240dp" /><!--이미지를 줄여야 한다.-->
+
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:text="위급차량도착"
+            android:textColor="#df6401"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-10dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

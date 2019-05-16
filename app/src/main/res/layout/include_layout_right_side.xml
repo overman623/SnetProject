@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+
+    >
+
+<!--    <TextView
+        android:id="@+id/text_record"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/relative_layout_title"
+        android:text="현재 위치"
+        android:textColor="@color/black"
+         />-->
+
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="550dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="175dp"
+            android:orientation="vertical"
+            android:background="@color/box_color"
+            >
+
+            <TextView
+                android:id="@+id/text_vehicle_1_id"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="구급차"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="-5dp"
+                >
+
+                <TextView
+                    android:id="@+id/text_vehicle_1_speed"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="157.0"
+                    android:textColor="@color/white"
+                    android:textSize="40dp" />
+
+                <TextView
+                    android:id="@+id/text_vehicle_1_heading"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="40dp"
+                    android:layout_weight="1"
+                    android:text="1.0"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="km/h"
+                    android:textColor="#58595b"
+                    android:textSize="15dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginLeft="35dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="deg."
+                    android:textColor="#58595b"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="35dp"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/red"
+                    />
+
+                <FrameLayout
+                    android:layout_width="35dp"
+                    android:layout_height="1dp"
+                    android:background="@color/box_color"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="75dp"
+                    />
+
+                <FrameLayout
+                    android:layout_width="80dp"
+                    android:layout_height="1dp"
+                    android:background="@color/red"
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingRight="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/image_my_marker_right"
+                    android:layout_width="58dp"
+                    android:layout_height="65dp"
+                    android:layout_marginRight="5dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    >
+                    <TextView
+                        android:id="@+id/text_my_latitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="위도 : 00.000000"
+                        />
+                    <TextView
+                        android:id="@+id/text_my_longitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="경도 : 00.000000"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="차량간 거리 : "
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:paddingLeft="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/text_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:gravity="start"
+                    android:textColor="@color/white"
+                    android:textSize="33dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="m"
+                    android:gravity="start"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="175dp"
+            android:orientation="vertical"
+            android:background="@color/box_color"
+            >
+
+                <TextView
+                    android:id="@+id/text_vehicle_2_id"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="위급차"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="-5dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/text_vehicle_2_speed"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="47"
+                        android:textColor="@color/white"
+                        android:textSize="40dp"
+                        android:layout_weight="1"
+                        />
+
+                    <TextView
+                        android:id="@+id/text_vehicle_2_heading"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/white"
+                        android:textSize="40dp"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="km/h"
+                        android:textColor="#58595b"
+                        android:textSize="15dp"
+                        android:layout_marginRight="35dp"
+                        android:layout_marginLeft="35dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="deg."
+                        android:textColor="#58595b"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="35dp"
+                        />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/red"
+                        />
+
+                    <FrameLayout
+                        android:layout_width="40dp"
+                        android:layout_height="1dp"
+                        android:background="@color/box_color"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="70dp"
+                        />
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="1dp"
+                        android:background="@color/red"
+                        />
+
+                </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingRight="10dp"
+                >
+
+                    <ImageView
+                        android:id="@+id/image_other_marker_right"
+                        android:layout_width="58dp"
+                        android:layout_height="65dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        >
+                        <TextView
+                            android:id="@+id/text_other_latitude"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="위도 : 00.000000"
+                            />
+                        <TextView
+                            android:id="@+id/text_other_longitude"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="경도 : 00.000000"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <!--      <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="220dp"
+                  >
+                  <com.github.mikephil.charting.charts.LineChart
+                      android:id="@+id/chart"
+                      android:layout_width="200dp"
+                      android:layout_height="200dp"
+                      android:background="#58595b"
+                      >
+
+                  </com.github.mikephil.charting.charts.LineChart>
+
+        </LinearLayout>-->
+        <!--차트는 맨 밑으로 내리는게 좋음.-->
+
+
+    </LinearLayout>
+
+    <!--
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+        <Button
+            android:id="@+id/button_alert"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="alert 보내기"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/button_chart"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="chart 시작"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+-->
+    <!--<LinearLayout
+        android:id="@+id/linear_layout_alert_bottom"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/image_alert_bottom"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            />
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:text="주변차량위험"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/red"
+            />
+
+    </LinearLayout>-->
+
+
+
+
+
+
+</LinearLayout>
