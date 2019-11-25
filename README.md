@@ -3,7 +3,7 @@ Vehicle tracking application
 
 ## Motivation
 2018년 12월 10일에 개최하는 자율주행 시험도시 K-City 준공식 참가 프로젝트로 사용됨
-[![News Link](https://redcat.tistory.com/566)
+[![News Link](https://redcat.tistory.com/566)]
 
 ## Build status 
 - Android Studio 2.5
