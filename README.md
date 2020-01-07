@@ -1,5 +1,5 @@
 ## Project title
-Vehicle tracking application
+Ambulance tracking panel In K-City 
 
 ## Motivation
 2018년 12월 10일에 kt와 한국교통안전공단이 주최하는 자율주행 시험도시 K-City 준공식 참가 프로젝트로 사용된 프로젝트 입니다.
